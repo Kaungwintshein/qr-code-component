@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+:root {
+  --card-bg-color: hsl(0, 0%, 100%);
+  --body-bg-color: hsl(212, 45%, 89%);
+  --color-p: hsl(220, 15%, 55%);
+  --color-h1: hsl(218, 44%, 22%);
+}
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--body-bg-color);
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 375px) {
+  .card {
+    background: var(--card-bg-color);
+    width: 250px;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 10px 10px 100px 0.1px var(--color-p);
+  }
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .card-body {
+    text-align: center;
+  }
+  .card-body h1 {
+    color: var(--color-h1);
+    font-weight: 700;
+    font-size: 1.3rem;
+  }
+  .card-body p {
+    color: var(--color-p);
+    font-weight: 400;
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .card {
+    background: var(--card-bg-color);
+    width: 400px;
+  }
+  .card-body h1 {
+    color: var(--color-h1);
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+  .card-body p {
+    margin: 0 auto;
+    width: 90%;
+    color: var(--color-p);
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin-bottom: 50px;
+  }
+}
